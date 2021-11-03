@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/front-end/style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Orinoco</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div id="header__container">
+            <a href="../index.html">
+                <img id="logo" alt="logo orinoco" src="../images/orinoco.png">
+            </a>
+            <nav id="navbar">
+                <ul id="navbar__list">
+                    <li>
+                        <a href="../index.html"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products -->
+    <section id="product" >
+        <h2 id="product__name" >Nom du produit</h2>
+        <div class="product__container">
+            <img id="product__image" src="https://via.placeholder.com/150" alt="placeholder">
+            <p id="product__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <label id="color__label" for="color__select">Choisissez une couleur :</label>
+            <select required name="color" id="color__select">
+                <option value="" label="Selectionnez une couleur"></option>
+            </select>
+            <span id="product__price"></span>
+            <button id="product__button"></button>
+        </div>
+    </section>
+    
+    <!-- Template -->
+    <template id="singleColor">
+        <option id="singleColor__color" label=""></option> 
+    </template>
+
+    <!-- Appel des scripts -->
+    <script src="/front-end/js/utils/request.js" defer></script>
+    <script src="/front-end/js/pages/products.js" defer></script>
+    <script src="/front-end/js/utils/CartObject.js" defer></script>
+
+
+</body>
+</html>
