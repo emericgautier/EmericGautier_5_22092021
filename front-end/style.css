@@ -1,0 +1,157 @@
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: #212123;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+h2, h3, p, figure {
+    margin: 0;
+}
+
+h2, h3, p, label, span {
+    color: #fff;
+}
+
+
+/* ************* Header ************ */
+
+#header {
+    max-width: 880px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+#header__container {
+    background-color: #313034;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 0.5fr;
+}
+
+#logo {
+    width: 180px;
+    height: 100%;
+    vertical-align: middle;
+}
+
+#navbar {
+    grid-column: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#navbar__list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+    padding-left: 0px;
+}
+
+@media (max-width: 375px) {
+    #navbar__list {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 1fr 1fr;
+        row-gap: 0.5rem;
+    }
+}
+
+#navbar__list > li {
+    margin: auto;
+}
+
+.fas {
+    font-size: 2rem;
+    color: #F1F1F1;
+}
+
+.fas:hover {
+    transform: scale(1.15);
+    transition: all 0.25s;
+    color: transparent;
+    background-image: linear-gradient(to right, #EB9728, #8F5CFE);
+    -webkit-background-clip: text;
+}
+
+/* ************* Section ************ */
+
+section, #product {
+    max-width: 880px;
+    margin: auto;
+    background-color: #313034;
+    margin-top: 0.5rem;
+    padding-top: 2rem;
+    border-radius: 1rem;
+}
+
+section > h2 {
+    margin-left: 2rem;
+}
+
+#products, .product__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+    list-style: none;
+    padding: 2rem;
+    margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+    #products {
+        grid-template-columns: 1fr;
+    }
+}
+
+.singleProduct__image {
+    height: 12rem;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    object-fit: cover;
+}
+
+.singleProduct__link > figure {
+    background-image: linear-gradient(to right, #EB9728, #8F5CFE);
+    border-radius: 1rem;
+    position: relative;
+}
+
+.singleProduct__link > figure:hover {
+    transform: scale(1.025);
+    transition: transform 0.25s;
+}
+
+.singleProduct__link > figure > figcaption {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+    padding: 0.75rem;
+    align-items: center;
+}
+
+.singleProduct__price {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-image: linear-gradient(to right, #EB9728, #8F5CFE);
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.singleProduct__description {
+    grid-row: 2;
+}
