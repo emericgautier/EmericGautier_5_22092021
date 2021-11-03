@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <title>Orinoco</title>
+
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header id="header">
+        <div id="header__container">
+            <a href="/front-end/index.html">
+                <img id="logo" alt="logo orinoco" src="images/orinoco.png">
+            </a>
+            <nav id="navbar">
+                <ul id="navbar__list">
+                    <li>
+                        <a href="/front-end/index.html"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="/front-end/pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Products -->
+    <section>
+        <h2>Nos produits</h2>
+        <ul id="products"></ul>
+    </section>
+
+    <!-- Template Content -->
+    <template id="singleProduct">
+        <li>
+            <a id="singleProduct__link">
+                <figure>
+                    <img id="singleProduct__image">
+                    <figcaption>
+                        <h3 id="singleProduct__name"></h3>
+                        <span id="singleProduct__price"></span>
+                        <p id="singleProduct__description"></p>
+                    </figcaption>
+                </figure>
+            </a>
+        </li>
+    </template>
+
+    
+    
+</body>
+</html>
