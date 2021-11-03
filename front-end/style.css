@@ -156,7 +156,7 @@ section > h2 {
     grid-row: 2;
 }
 
-/* ************* Product ************ */
+/* ************* Product Page ************ */
 
 .product__container {
     gap: 1rem;
@@ -211,4 +211,54 @@ section > h2 {
 #product__button:hover {
     filter: invert(0.15);
     transition: all 0.25s;
+}
+
+/* ************* Cart Page ************ */
+
+#cart__container, form {
+    padding: 2rem;
+}
+
+#cart__container > header, #cart__container > footer, .singleProduct__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 1rem 0;
+}
+
+#header__total,
+#total__price {
+    grid-column: 3/4;
+}
+
+form {
+    display: grid;
+    row-gap: 1rem;
+}
+
+.field__container {
+    display: flex;
+    flex-direction: column;
+}
+
+input {
+    border-radius: 1rem;
+    margin-top: 0.5rem;
+    padding: 0.2rem;
+}
+
+#confirm {
+    background-image: linear-gradient(to right, #EB9728, #8F5CFE);
+    color: white;
+    border: none;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+#confirm:hover {
+    transform: scale(1.025);
+    transition: transform 0.25s;
 }
