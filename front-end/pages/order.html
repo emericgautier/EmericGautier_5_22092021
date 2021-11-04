@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <!-- Required meta tags-->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="/front-end/style.css">
+    
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" crossorigin="anonymous">
+    
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    
+    <title>Orinoco</title>
+    
+</head>
+<body>
+    
+    <!-- Header -->
+    <header id="header">
+        <div id="header__container">
+            <a href="../index.html">
+                <img id="logo" alt="logo orinoco" src="../images/orinoco.png">
+            </a>
+            <nav id="navbar">
+                <ul id="navbar__list">
+                    <li>
+                        <a href="/front-end/index.html"><i class="fas fa-home"></i></a>
+                    </li>
+                    <li>
+                        <a href="/front-end/pages/cart.html"><i class="fas fa-shopping-cart"></i></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- Order -->
+    <section id="order">
+        <header>
+            <div id="order__title">
+                <h2>Commande</h2>
+                <span id="order__id"></span>
+            </div>
+        </header>
+        <div id="order__container">
+            <h3>Merci <span id="order__name"></span><br>Votre commande de <span id="order__price"></span> a bien été enregistrée.</h3>
+            <div id="order__infos">
+                <h3>Votre commande sera expédiée à l'adresse :</h3>
+                <span id="order__address"></span>
+                <h3>Un e-mail de confirmation est envoyée à l'adresse e-mail :</h3>
+                <span id="order__mail"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call Scripts-->
+    <script src="/front-end/js/utils/cartObject.js" defer></script>
+    <script src="/front-end/js/utils/request.js" defer></script>
+    <script src="/front-end/js/pages/order.js" defer></script>
+    
+</body>
+</html>
