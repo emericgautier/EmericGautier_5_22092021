@@ -1,12 +1,30 @@
-# Orinoco #
+## Projet 5 - Orinoco
+_Projet  de la formation développeur web - OpenClassroom._
 
-This is the front-end for Project 5 of the Junior Web Developer path.
+<br />
 
-### Prerequisites ###
+### 🎯 Mission
+  - Construisez un site e-commerce en Javascript
 
-You will need to have Node and `npm` installed locally on your machine.
+<br />
 
-### Installation ###
+### 🛠 Technologies 
+- HTML 
+- CSS
+- Javascript
 
-Clone this repo. From within the project folder, run `npm install`. You 
-can then run the server with `node server`. 
+<br />
+
+### ⚡️ Evaluation
+1. Gérer des événements JavaScript
+2. Valider des données issues de sources externes
+3. Créer un plan de test pour une application
+4. Interagir avec un web service avec JavaScript
+
+<br />
+
+## Installation
+
+Vous aurez besoin d'avoir Node et `npm` installés localement sur votre machine.
+
+Clonez ce projet. Depuis le dossier du projet, exécutez "npm install". Vous pourrez alors exécuter le serveur avec `node server`.
